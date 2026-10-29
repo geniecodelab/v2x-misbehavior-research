@@ -1,0 +1,13 @@
+data/raw/
+data/processed/
+artifacts/*
+!artifacts/.gitkeep
+runs/
+*.parquet
+*.joblib
+*.pkl
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,424 @@
+{
+  "methods": {
+    "decision_tree": {
+      "fit_seconds": 1.3695568000002822,
+      "threshold": 0.79,
+      "message": {
+        "threshold": 0.79,
+        "accuracy": 0.8668882013674039,
+        "precision": 0.9494511298049719,
+        "recall": 0.7341325399603313,
+        "f1": 0.8280229631701018,
+        "false_positive_rate": 0.03027632797849025,
+        "pr_auc": 0.8895792905280119,
+        "confusion_matrix": [
+          [
+            42919,
+            1340
+          ],
+          [
+            9115,
+            25169
+          ]
+        ],
+        "messages": 78543,
+        "positive_messages": 34284
+      },
+      "node": {
+        "threshold": 0.79,
+        "accuracy": 0.8595770888934511,
+        "precision": 0.8441978733240869,
+        "recall": 0.8403129314312011,
+        "f1": 0.8422509225092251,
+        "false_positive_rate": 0.12490733876945886,
+        "pr_auc": 0.930214764442832,
+        "confusion_matrix": [
+          [
+            2361,
+            337
+          ],
+          [
+            347,
+            1826
+          ]
+        ],
+        "nodes": 4871,
+        "positive_nodes": 2173,
+        "aggregation": "quantile_0.95"
+      },
+      "per_attack": {
+        "constantPositionOffset": {
+          "threshold": 0.79,
+          "accuracy": 0.8254073137117937,
+          "precision": 0.37441643323996265,
+          "recall": 0.09207807118254879,
+          "f1": 0.14780685587910064,
+          "false_positive_rate": 0.03027632797849025,
+          "pr_auc": 0.2362297527044948,
+          "confusion_matrix": [
+            [
+              42919,
+              1340
+            ],
+            [
+              7908,
+              802
+            ]
+          ],
+          "messages": 52969,
+          "positive_messages": 8710
+        },
+        "constantSpeedOffset": {
+          "threshold": 0.79,
+          "accuracy": 0.9619631671024662,
+          "precision": 0.8598033061309898,
+          "recall": 0.9233707865168539,
+          "f1": 0.8904540036840395,
+          "false_positive_rate": 0.03027632797849025,
+          "pr_auc": 0.9408179004006224,
+          "confusion_matrix": [
+            [
+              42919,
+              1340
+            ],
+            [
+              682,
+              8218
+            ]
+          ],
+          "messages": 53159,
+          "positive_messages": 8900
+        },
+        "randomPositionOffset": {
+          "threshold": 0.79,
+          "accuracy": 0.9683853899008356,
+          "precision": 0.8558984837079255,
+          "recall": 0.961231884057971,
+          "f1": 0.9055122589453325,
+          "false_positive_rate": 0.03027632797849025,
+          "pr_auc": 0.9722830740388284,
+          "confusion_matrix": [
+            [
+              42919,
+              1340
+            ],
+            [
+              321,
+              7959
+            ]
+          ],
+          "messages": 52539,
+          "positive_messages": 8280
+        },
+        "randomSpeedOffset": {
+          "threshold": 0.79,
+          "accuracy": 0.970675934894498,
+          "precision": 0.8593913955928646,
+          "recall": 0.9756969263759828,
+          "f1": 0.913858513724615,
+          "false_positive_rate": 0.03027632797849025,
+          "pr_auc": 0.9849574639389389,
+          "confusion_matrix": [
+            [
+              42919,
+              1340
+            ],
+            [
+              204,
+              8190
+            ]
+          ],
+          "messages": 52653,
+          "positive_messages": 8394
+        }
+      },
+      "detection_latency": {
+        "attacked_sequences": 2173,
+        "detected_sequences": 2008,
+        "detection_rate": 0.9240681086056144,
+        "median_seconds": 0.0,
+        "p95_seconds": 1.0
+      }
+    },
+    "logistic_regression": {
+      "fit_seconds": 35.211436399999,
+      "threshold": 0.6900000000000001,
+      "message": {
+        "threshold": 0.6900000000000001,
+        "accuracy": 0.837783125167106,
+        "precision": 0.8747781914338402,
+        "recall": 0.7333450005833625,
+        "f1": 0.7978421261404205,
+        "false_positive_rate": 0.08131679432431822,
+        "pr_auc": 0.8831171038939473,
+        "confusion_matrix": [
+          [
+            40660,
+            3599
+          ],
+          [
+            9142,
+            25142
+          ]
+        ],
+        "messages": 78543,
+        "positive_messages": 34284
+      },
+      "node": {
+        "threshold": 0.6900000000000001,
+        "accuracy": 0.6222541572572368,
+        "precision": 0.5465213746856664,
+        "recall": 0.9001380579843534,
+        "f1": 0.6801112656467315,
+        "false_positive_rate": 0.6015567086730912,
+        "pr_auc": 0.880406380801869,
+        "confusion_matrix": [
+          [
+            1075,
+            1623
+          ],
+          [
+            217,
+            1956
+          ]
+        ],
+        "nodes": 4871,
+        "positive_nodes": 2173,
+        "aggregation": "quantile_0.95"
+      },
+      "per_attack": {
+        "constantPositionOffset": {
+          "threshold": 0.6900000000000001,
+          "accuracy": 0.7808718306934245,
+          "precision": 0.16321785631248548,
+          "recall": 0.08059701492537313,
+          "f1": 0.10790869264468526,
+          "false_positive_rate": 0.08131679432431822,
+          "pr_auc": 0.1730799375222979,
+          "confusion_matrix": [
+            [
+              40660,
+              3599
+            ],
+            [
+              8008,
+              702
+            ]
+          ],
+          "messages": 52969,
+          "positive_messages": 8710
+        },
+        "constantSpeedOffset": {
+          "threshold": 0.6900000000000001,
+          "accuracy": 0.9163829266916232,
+          "precision": 0.691152492920278,
+          "recall": 0.9049438202247191,
+          "f1": 0.7837298691188634,
+          "false_positive_rate": 0.08131679432431822,
+          "pr_auc": 0.8201214910129598,
+          "confusion_matrix": [
+            [
+              40660,
+              3599
+            ],
+            [
+              846,
+              8054
+            ]
+          ],
+          "messages": 53159,
+          "positive_messages": 8900
+        },
+        "randomPositionOffset": {
+          "threshold": 0.6900000000000001,
+          "accuracy": 0.9282437808104456,
+          "precision": 0.6926033481380253,
+          "recall": 0.9793478260869565,
+          "f1": 0.8113868320992595,
+          "false_positive_rate": 0.08131679432431822,
+          "pr_auc": 0.9732375302840935,
+          "confusion_matrix": [
+            [
+              40660,
+              3599
+            ],
+            [
+              171,
+              8109
+            ]
+          ],
+          "messages": 52539,
+          "positive_messages": 8280
+        },
+        "randomSpeedOffset": {
+          "threshold": 0.6900000000000001,
+          "accuracy": 0.9294247241372762,
+          "precision": 0.6969518356348939,
+          "recall": 0.9860614724803431,
+          "f1": 0.81667488899852,
+          "false_positive_rate": 0.08131679432431822,
+          "pr_auc": 0.9736698543947522,
+          "confusion_matrix": [
+            [
+              40660,
+              3599
+            ],
+            [
+              117,
+              8277
+            ]
+          ],
+          "messages": 52653,
+          "positive_messages": 8394
+        }
+      },
+      "detection_latency": {
+        "attacked_sequences": 2173,
+        "detected_sequences": 2155,
+        "detection_rate": 0.9917165209387943,
+        "median_seconds": 0.0,
+        "p95_seconds": 0.0
+      }
+    },
+    "xgboost": {
+      "fit_seconds": 8.561134699999457,
+      "threshold": 0.73,
+      "message": {
+        "threshold": 0.73,
+        "accuracy": 0.8674229403002177,
+        "precision": 0.9583701371020392,
+        "recall": 0.7278905611947264,
+        "f1": 0.8273792749034365,
+        "false_positive_rate": 0.024492193678121964,
+        "pr_auc": 0.8975938575165356,
+        "confusion_matrix": [
+          [
+            43175,
+            1084
+          ],
+          [
+            9329,
+            24955
+          ]
+        ],
+        "messages": 78543,
+        "positive_messages": 34284
+      },
+      "node": {
+        "threshold": 0.73,
+        "accuracy": 0.8772326011086019,
+        "precision": 0.8854625550660793,
+        "recall": 0.8324896456511734,
+        "f1": 0.8581593927893738,
+        "false_positive_rate": 0.08673091178650852,
+        "pr_auc": 0.9312301507520739,
+        "confusion_matrix": [
+          [
+            2464,
+            234
+          ],
+          [
+            364,
+            1809
+          ]
+        ],
+        "nodes": 4871,
+        "positive_nodes": 2173,
+        "aggregation": "quantile_0.95"
+      },
+      "per_attack": {
+        "constantPositionOffset": {
+          "threshold": 0.73,
+          "accuracy": 0.828503464290434,
+          "precision": 0.3957636566332218,
+          "recall": 0.08151549942594719,
+          "f1": 0.13518659558263518,
+          "false_positive_rate": 0.024492193678121964,
+          "pr_auc": 0.24100342466308586,
+          "confusion_matrix": [
+            [
+              43175,
+              1084
+            ],
+            [
+              8000,
+              710
+            ]
+          ],
+          "messages": 52969,
+          "positive_messages": 8710
+        },
+        "constantSpeedOffset": {
+          "threshold": 0.73,
+          "accuracy": 0.966064071935138,
+          "precision": 0.8829879101899827,
+          "recall": 0.9191011235955057,
+          "f1": 0.9006826690156353,
+          "false_positive_rate": 0.024492193678121964,
+          "pr_auc": 0.9523364238109369,
+          "confusion_matrix": [
+            [
+              43175,
+              1084
+            ],
+            [
+              720,
+              8180
+            ]
+          ],
+          "messages": 53159,
+          "positive_messages": 8900
+        },
+        "randomPositionOffset": {
+          "threshold": 0.73,
+          "accuracy": 0.9714688136431984,
+          "precision": 0.8788691473907699,
+          "recall": 0.9498792270531401,
+          "f1": 0.9129955307911081,
+          "false_positive_rate": 0.024492193678121964,
+          "pr_auc": 0.97519525690598,
+          "confusion_matrix": [
+            [
+              43175,
+              1084
+            ],
+            [
+              415,
+              7865
+            ]
+          ],
+          "messages": 52539,
+          "positive_messages": 8280
+        },
+        "randomSpeedOffset": {
+          "threshold": 0.73,
+          "accuracy": 0.9757278787533474,
+          "precision": 0.8832399827660491,
+          "recall": 0.9768882535144151,
+          "f1": 0.9277067541577102,
+          "false_positive_rate": 0.024492193678121964,
+          "pr_auc": 0.9897678550856109,
+          "confusion_matrix": [
+            [
+              43175,
+              1084
+            ],
+            [
+              194,
+              8200
+            ]
+          ],
+          "messages": 52653,
+          "positive_messages": 8394
+        }
+      },
+      "detection_latency": {
+        "attacked_sequences": 2173,
+        "detected_sequences": 1944,
+        "detection_rate": 0.8946157386102163,
+        "median_seconds": 0.0,
+        "p95_seconds": 1.0
+      }
+    }
+  }
+}
